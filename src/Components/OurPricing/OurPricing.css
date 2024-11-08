@@ -1,0 +1,24 @@
+.pricing-section {
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.pricing-title {
+    color: #384bff;
+    font-size: 1.5rem;
+}
+
+.pricing-description {
+    font-size: 1.875rem; 
+    margin-top: 10px;
+}
+
+.pricing-card-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+}

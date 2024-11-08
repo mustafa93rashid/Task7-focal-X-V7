@@ -1,0 +1,27 @@
+.MR-Blog {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.MR-Blog h3 {
+    font-size: 1.875rem;
+    margin-top: 10px;
+    color: #333;
+    padding-left: 12%;
+
+}
+
+.MR-Blog-Description {
+    color: #384bff;
+    margin: 20px 0;
+    padding-left: 12%;
+
+}
+
+.blogcard-flex {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 110px;
+    justify-content: center;
+}

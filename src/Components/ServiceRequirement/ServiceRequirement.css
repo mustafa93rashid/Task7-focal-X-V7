@@ -1,0 +1,17 @@
+.reqcard{
+}
+
+.reqcard span{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.466);
+}
+
+.reqcard h4{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.reqcard p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.466);
+}

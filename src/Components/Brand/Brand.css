@@ -1,0 +1,26 @@
+.brand {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 50px; 
+    padding: 20px;
+    flex-wrap: wrap; 
+    margin-top: 50px;
+}
+
+.brand img {
+    width: 200px; 
+    height: auto; 
+    transition: transform 0.3s ease; 
+}
+
+.brand img:hover {
+    transform: scale(1.1); 
+}
+
+
+@media (max-width: 768px) {
+    .brand img {
+        width: 125px; 
+    }
+}
