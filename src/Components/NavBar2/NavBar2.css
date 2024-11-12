@@ -1,0 +1,125 @@
+.MR-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 9999;
+}
+
+.MR-Navbar2-logo img {
+  width: 125px;
+}
+
+.MR-Navbar2-list ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+.MR-Navbar2-list ul li {
+  padding-left: 35px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.MR-Navbar2-list ul li .Link{
+  text-decoration: none;
+  color: black;
+}
+
+.MR-Navbar2-list ul li:hover {
+  color: #384cff;
+  transform: translateX(5px);
+}
+
+.MR-quote-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #384cff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.MR-quote-button:hover {
+  background-color: #2a3fcc;
+  transform: scale(1.1);
+}
+
+.MR-nav-shape {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.MR-nav-shape img {
+  width: 75px;
+}
+
+.MR-toggle-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  padding-right: 50px;
+}
+
+@media (max-width: 1094px) {
+    .MR-navbar {
+
+        padding: 10px 100px;
+      }
+  .MR-quote-button,
+  .MR-nav-shape {
+    display: none;
+  }
+
+  .MR-toggle-icon {
+    display: block;
+  }
+
+  .search-icon {
+    margin-right: 25px;
+  }
+
+  .MR-Navbar2-list {
+    position: absolute;
+    width: 100px;
+    height: 100vh;
+    top: 0;
+    right: -300px;
+    background-color: rgba(240, 248, 255, 0.95);
+    transition: right 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    z-index: 1000;
+    padding-top: 60px;
+  }
+
+  .MR-Navbar2-list.open {
+    right: 0;
+    opacity: 1;
+  }
+
+  .MR-Navbar2-list ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  .MR-Navbar2-list ul li {
+    padding: 15px 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .MR-Navbar2-list ul li:hover {
+    transform: translateX(10px);
+    color: #2a3fcc;
+  }
+}

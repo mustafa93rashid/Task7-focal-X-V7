@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import './../Navbar/Homenavbar.css';
+import React, { useState } from "react";
+import "./../Navbar/Homenavbar.css";
 import { CiSearch } from "react-icons/ci";
 import { SlBasket } from "react-icons/sl";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { FaBars, FaTimes } from "react-icons/fa"; 
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Homenavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,34 +14,59 @@ export default function Homenavbar() {
   };
 
   return (
-    <nav className='Homenavbar'>
-      <div className='logo'>
+    
+    <nav className="Homenavbar">
+      <div className="logo">
         <img src="/image/logo.svg" alt="logo" />
       </div>
 
-      <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+      <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <ul>
-          <li>Home</li>
-          <li>About</li>
+          <li>
+            <Link className="Link" to={"/"}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link className="Link" to={"/About"}>
+              About
+            </Link>
+          </li>
           <li>Services</li>
           <li>Pages</li>
           <li>Blog</li>
-          <li>Contact</li>
+          <li>
+            <Link className="Link" to={"/Contact"}>
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
 
-      <div className='Homenavbar-icon'>
-        <div><CiSearch /></div>
-        <div className='basket'><SlBasket /></div>
+      <div className="Homenavbar-icon">
+        <div>
+          <CiSearch />
+        </div>
+        <div className="basket">
+          <SlBasket />
+        </div>
       </div>
 
-      <div className='button-wrapper'>
-        <button><div>GET A QUOTE</div> <div><FaArrowRightLong /></div></button>
+      <div className="button-wrapper">
+        <button>
+          <div>GET A QUOTE</div>{" "}
+          <div>
+            <FaArrowRightLong />
+          </div>
+        </button>
       </div>
 
       <div className="toggle-icon" onClick={toggleMenu}>
-      {isMenuOpen ? <FaTimes /> : <FaBars />}
+        {isMenuOpen ? <FaTimes /> : <FaBars />}
       </div>
     </nav>
+
+
+
   );
 }

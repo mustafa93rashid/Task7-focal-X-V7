@@ -18,7 +18,8 @@ export default function Blog() {
       <div className='blogcard-flex'>
         {[{img: Blogimg1, adminImg: Blogadminimg1, text:'Best And Fastest Data Server Ever' , date:'MARCH 14,2024', button:'Uncategorized'}, 
         {img: Blogimg2, adminImg: Blogadminimg2, text: 'Life Wont One Beast Air Over Above All' , date:'MARCH 29,2024', button:'Technology'}, 
-        {img: Blogimg3, adminImg: Blogadminimg3, text: 'Attentive Was Born in 2015 Help Sales Teams' , date:'MARCH 24,2024' , button:'Shared Hosting'}].map((data, index) => (
+        {img: Blogimg3, adminImg: Blogadminimg3, text: 'Attentive Was Born in 2015 Help Sales Teams' , date:'MARCH 24,2024' , button:'Shared Hosting'}]
+        .map((data, index) => (
           <BlogCard 
             key={index}
             Blogimg={data.img}

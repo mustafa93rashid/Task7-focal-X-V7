@@ -1,74 +1,80 @@
 import './Hero.css';
-import { FaArrowRightLong } from "react-icons/fa6";
 import { CiWavePulse1 } from "react-icons/ci";
 import { GiCheckMark } from "react-icons/gi";
 import { FaStar } from "react-icons/fa";
 
-
 export default function Hero() {
   return (
-    <div className='Hero'>
-      <div className='HeroLftsd'>
-        <p><CiWavePulse1 /> Every Thing You Need To Create A Website</p>
-        <h2>Business Innovation With IT Services Expertise</h2>
+    <section>
+      <div className='hero-section'>
+        <div className='row hero-main-content'>
 
-        <div className='list'>
-          <ul>
-            <li><GiCheckMark /> Development and Support</li>
-            <li><GiCheckMark /> Discovery and Analysis</li>
-          </ul>
-          <ul>
-            <li><GiCheckMark /> Flexibility and Adaptability</li>
-            <li><GiCheckMark /> Competitive Advantage</li>
-          </ul>
-        </div>
-        
-        <div>
-          <button>
-            <div>GET STARTED</div>
-            <div><FaArrowRightLong /></div>
-          </button>
-        </div>
-        <div className='Reviews'>
-          <div>
-        <h2> <FaStar className='star'/>Trustipilot</h2>
-            <div className='LeftSideReviews'>
+          {/* Main Heading and Call to Action */}
+          <div className='col-lg-8 col-md-12 col-sm-12 hero-info'>
+            <div className='hero-header'>
+              <p><CiWavePulse1 className='pulse-icon' /> Everything You Need to Create a Website</p>
+              <h2>Business Innovation with IT Services Expertise</h2>
+              
+              {/* Key Feature List */}
+              <div className='feature-list'>
+                <ul>
+                  <li><GiCheckMark /> Development and Support</li>
+                  <li><GiCheckMark /> Discovery and Analysis</li>
+                </ul>
+                <ul>
+                  <li><GiCheckMark /> Flexibility and Adaptability</li>
+                  <li><GiCheckMark /> Competitive Advantage</li>
+                </ul>
+              </div>
+
+              {/* Get Started Button */}
               <div>
-              <img className='Reviewsimg' src="/image/profileShape1_1.webp" />
-              </div>
-              <div className='ReviewsStars'>
-                <div className='threestars'>
-              <FaStar /><FaStar /><FaStar /></div>
-              <p>450+ reviews</p>
+                <button className='cta-button'>
+                  <span>GET STARTED ➔</span>
+                </button>
               </div>
             </div>
 
-        </div>
-
-        <div className='line'></div>
-
-        <div>
-        <h2>Google</h2>
-            <div className='LeftSideReviews'>
-              <div >
-              <img className='Reviewsimg' src="/image/profileShape1_1.webp" />
+            {/* User Reviews Section */}
+            <div className='row reviews-container'>
+              <div className='col-lg-6 col-md-12 col-sm-12 review-card'>
+                <h2 className='review-title'><FaStar className='review-icon' /> Trustpilot</h2>
+                <div className='review-content'>
+                  <img className='review-image' src="/image/profileShape1_1.webp" alt="Profile" />
+                  <div>
+                    <div className='rating-stars'>
+                      <FaStar /><FaStar /><FaStar />
+                    </div>
+                    <p>450+ reviews</p>
+                  </div>
+                </div>
               </div>
-              <div className='ReviewsStars'>
-                <div className='threestars'>
-              <FaStar /><FaStar /><FaStar /></div>
-              <p>450+ reviews</p>
+
+              <div className='col-lg-6 col-md-12 col-sm-12 review-card'>
+                <h2 className='review-title'>Google</h2>
+                <div className='review-content'>
+                  <img className='review-image' src="/image/profileShape1_1.webp" alt="Profile" />
+                  <div>
+                    <div className='rating-stars'>
+                      <FaStar /><FaStar /><FaStar />
+                    </div>
+                    <p>450+ reviews</p>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+
+          {/* Image Section */}
+          <div className='col-lg-4 col-md-12 col-sm-12 hero-images'>
+            <img className='main-hero-image' src="/image/heroThumb1_1.webp" alt="Hero" />
+            <div>
+              <img className='decorative-shape1' src="/image/heroShape1_1.webp" alt="Shape 1" />
+              <img className='decorative-shape2' src="/image/heroShape1_2.webp" alt="Shape 2" />
+            </div>
+          </div>
         </div>
-        </div>
-
-
       </div>
-      <div className='Heroshape1'>
-      </div>
-
-      <div className='HeroRgtsd'></div>
-      <div className='Heroshape2' ></div>
-    </div>
+    </section>
   );
 }

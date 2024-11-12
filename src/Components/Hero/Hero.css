@@ -1,248 +1,128 @@
-.Hero {
-    height: 100vh;
+/* Main Hero Section Styles */
+.hero-section {
+    height: calc(100vh - 40px);
     width: 90%;
     background-color: #384cff;
     color: #fcfcfc;
-    transform: translate(5%);
+    margin: 0 auto;
     border-radius: 30px;
     margin-top: 40px;
     position: relative;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
     overflow: hidden;
-}
-
-.HeroLftsd {
-    padding: 200px 150px;
-}
-
-.HeroLftsd > p {
+    padding: 10% 10% 0% 10%;
     display: flex;
-    align-items: center;
-    border: 1px solid #ffffff;
+
+}
+
+/* Pulse Icon in Header */
+.pulse-icon {
+    width: 20px;
+}
+
+/* Hero Header Text */
+.hero-header p {
+    border: 1px solid white;
     border-radius: 30px;
     width: fit-content;
-    padding: 8px 15px;
-    font-weight: 500;
+    padding: 12px;
+    font-weight: 700;
 }
 
-.HeroLftsd h2 {
-    font-size: 2.5rem; 
-    width: 100%;
-    max-width: 600px; 
-    padding-top: 15px;
+/* Hero Title */
+.hero-header h2 {
+    font-size: 45px;
+    font-weight: 700;
 }
 
-.list {
+/* Key Features List */
+.feature-list {
     display: flex;
-    gap: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
-
-.list ul {
-    padding: 0;
-    margin: 0;
-}
-
-.list ul li {
-    padding: 10px 0;
+.feature-list ul li {
     list-style: none;
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    gap: 10px;
+    padding-bottom: 10px;
 }
 
-.HeroLftsd button {
-    display: flex;
-    align-items: center;
+/* Call-to-Action Button */
+.cta-button {
     gap: 10px;
-    padding: 15px 20px;
+    padding: 15px 25px;
     border-radius: 25px;
     border: none;
     background-color: #f98600;
     color: #fff;
     cursor: pointer;
-    margin-top: 35px;
+    margin-top: 5px;
     font-size: 1rem;
     transition: background-color 0.3s ease;
 }
-
-.HeroLftsd button:hover {
-    background-color: #ff9800;
+.cta-button:hover {
+    background-color: #f8af41;
+    transform: scale(1.1);
 }
 
-
-.Reviews{
-    background-color: #ffffff2a;
-    padding: 20px;
-    padding-bottom: 50px;
-    border: #ffffff 0.6px solid;
-    border-radius: 20px 20px 0px 0px ;
+/* Reviews Section */
+.reviews-container {
+    width: 50%;
+    background-color: #fcfcfc1c;
+    padding: 35px;
     position: absolute;
-    bottom: 8px;
-    display: flex;
-    gap: 50px;
+    bottom: 0;
+    border-radius: 26px 26px 0 0;
+    border: 0.5px solid rgba(255, 255, 255, 0.555);
 }
-.ReviewsStars p{
-    font-size: 12px;
+.review-title {
+    font-size: 20px;
 }
-.LeftSideReviews
-{
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-.Reviews h2{
-    font-size: 15px;
-    padding-bottom: 25px;
-    display: flex;
-    align-items: center;
-}
-.star{
+
+/* Star Icons */
+.review-icon {
     color: #00b67a;
+}
+.rating-stars {
+    color: #f8af41;
+}
+
+/* Review Content */
+.review-content {
+    display: flex;
+    align-items: center;
+}
+.review-image {
     margin-right: 10px;
 }
-.LeftSideReviews img {
-    width: 125px;
-}
-.threestars{
-color: #fbb03b;
-}
 
-.line {
-    width: 0.5px;
-    height: 110px;
-    background-color: #ffffff8e;
-}
-
-
-
-.Heroshape1 {
-    background-image: url('/image/heroShape1_2.webp');
+/* Hero Image and Decorative Shapes */
+.main-hero-image {
+    width: 25%;
     position: absolute;
-    padding: 0 !important;
-    bottom: -200px;
-    right: 1150px;
-    width: 50%;
-    height: 90%;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: contain;
+    bottom: 0;
+    right: 10%;
+    z-index: 9999;
 }
-
-.HeroRgtsd {
-    background-image: url('/image/heroThumb1_1.webp');
+.decorative-shape1 {
+    width: 33%;
     position: absolute;
-    bottom: 0px;
-    right: 50px;
-    width: 50%;
-    height: 90%;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: contain;
-    z-index: 1;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
 }
-
-.Heroshape2 {
-    background-image: url('/image/heroShape1_1.webp');
+.decorative-shape2 {
+    width: 10%;
     position: absolute;
-    bottom: -200px;
-    right: -130px;
-    width: 50%;
-    height: 90%;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: contain;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
 }
 
-
-@media (max-width: 1400px) {
-    .HeroRgtsd {
-        right: 3px;
-        width: 40%;
-        height: 80%;
-    }}
-
-    @media (max-width: 1293px) {
-        .HeroRgtsd {
-            right: 3px;
-            width: 40%;
-            height: 70%;  
-        }
-        .Heroshape2 {
-            width: 40%;
-            height: 80%;
-        }
-        .Reviews{
-            gap:10px;
-        }
-    }   
-
-@media (max-width: 1024px) {
-    .HeroLftsd {
-        padding: 400px 0 15px 10px;
-    }
-
-    .HeroLftsd h2 {
-        font-size: 2rem;
-    }
-
-    .HeroRgtsd {
-        transform: translate(-100%, -50%);
-       width: 300px;
-    }
-    .Hero {
-        height: fit-content;}
-}
-
-
-
+/* Responsive Design */
 @media (max-width: 768px) {
-    .Hero {
-        flex-direction: column;
-        align-items: center;
+    .decorative-shape1, .decorative-shape2 {
+        display: none;
     }
-
-    .HeroLftsd {
-        padding-top: 30px;
-        text-align: center;
-    }
-
-    .HeroLftsd p {
-        justify-content: center;
-    }
-
-    .HeroLftsd h2 {
-        font-size: 1.75rem;
-    }
-
-    .list {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .HeroRgtsd {
-        position: static;
-        width: 80%;
-        height: 40%;
-        background-size: contain;
-    }
-}
-
-@media (max-width: 480px) {
-    .HeroLftsd {
-        padding: 20px;
-    }
-
-    .HeroLftsd h2 {
-        font-size: 1.5rem;
-    }
-
-    .HeroLftsd button {
-        font-size: 0.875rem;
-        padding: 10px 15px;
+    .hero-main-content {
+        display: block;
+        flex-wrap: wrap-reverse;
     }
 }

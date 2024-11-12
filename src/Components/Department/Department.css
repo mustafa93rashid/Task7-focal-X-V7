@@ -1,0 +1,19 @@
+.About-section-department {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    flex-wrap: wrap;
+  }
+  .About-section-department div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .About-section-department div h2 {
+    font-weight: bold;
+    font-size: 40px;
+  }
+  .departmentformobile {
+      display: none;
+  }
+  

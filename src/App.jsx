@@ -1,31 +1,21 @@
-import './App.css'
-import Hero from './Components/Hero/Hero'
-import Services from './Components/Services/Services'
-import Brand from './Components/Brand/Brand'
-import Homenavbar from './Components/Navbar/Homenavbar'
-import OurPricing from './Components/OurPricing/OurPricing'
-import Contactus from './Components/Contactus/Contactus'
-import Blog from './Components/Blog/Blog'
-import Footer from './Components/Footer/Footer'
-
-
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Route, Routes } from "react-router";
+import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About";
+import Contact from "./Pages/Contact/Contact";
 
 
 function App() {
-
   return (
     <>
-    <Homenavbar />
-    <Hero />
-    <Brand />
-    <Services />
-    <OurPricing />
-    {/* <Contactus /> */}
-    <Blog />
-    <Footer />
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

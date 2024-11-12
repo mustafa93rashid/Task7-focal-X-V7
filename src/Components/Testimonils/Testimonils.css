@@ -1,0 +1,13 @@
+.Testimonils-section {
+  background-color: #f2f6fe;
+  text-align: center;
+  padding: 50px 0;
+}
+.Testimonils-title {
+  color: #384bff;
+  font-size: 1.5rem;
+}
+.Testimonils-description {
+  font-size: 1.875rem;
+  margin-top: 10px;
+}
