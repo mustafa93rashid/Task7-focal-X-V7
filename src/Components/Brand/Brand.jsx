@@ -1,5 +1,5 @@
 import React from 'react';
-import './Brand.css'; // تأكد من استيراد ملف CSS هنا
+import './Brand.css'; 
 
 function Brand() {
   return (
