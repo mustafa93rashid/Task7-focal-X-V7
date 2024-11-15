@@ -47,6 +47,7 @@ export default function Team() {
             <img src="/image/envato.svg" alt="" />
             <img src="/image/envato.svg" alt="" />
         </div>
+
     </div>
     </section>
   );

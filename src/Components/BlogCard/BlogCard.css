@@ -1,109 +1,131 @@
 .blog-parent {
-    width: 350px;
-    position: relative;
-    margin: 20px;
-    text-align: left;
+  width: 350px;
+  position: relative;
+  margin: 20px;
+  text-align: left;
 }
 
 .Blogimg {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .Blogcard-Container {
-    width: 90%;
-    background-color: white;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 15%);
-    z-index: 1;
+  width: 90%;
+  background-color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 15%);
+  z-index: 1;
 }
 
 .Blogcard-date {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .Blogcard-date button {
-    color: #384bff;
-    padding: 6px 12px;
-    border-radius: 20px;
-    background-color: transparent;
-    border: 1px solid #384cff75;
-    transition: background-color 0.3s ease, color 0.3s ease;
-
+  color: #384bff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #384cff75;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .Blogcard-date button:hover {
-    background-color: #384bff;
-    color: white;
+  background-color: #384bff;
+  color: white;
 }
 
 .Blogcard-date p {
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
 }
 
 .Blogcard-Container h4 {
-    font-size: 1.1rem;
-    color: #333;
-    margin: 10px 0;
+  font-size: 1.1rem;
+  color: #333;
+  margin: 10px 0;
 }
 
 .blogline {
-    width: 90%;
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin: 15px 0;
+  width: 90%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 15px 0;
 }
 
 .BlogCard-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .BlogCard-footer-rgtside {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .admin-img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
 
 .BlogCard-footer h5 {
-    margin: 0;
-    font-size: 0.9rem;
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 .BlogCard-footer span {
-    font-size: 0.8rem;
-    color: rgba(0, 0, 0, 0.5);
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .arrow-button {
-    padding: 8px;
-    border-radius: 8px;
-    border: 1px solid #384cff75;
-    background-color: transparent;
-    color: #384bff;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #384cff75;
+  background-color: transparent;
+  color: #384bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .arrow-button:hover {
-    background-color: #384bff;
-    color: white;
+  background-color: #384bff;
+  color: white;
 }
 
+@media (max-width: 768px) {
+  .blog-parent {
+    width: 90%;
+  }
+
+  .Blogcard-Container {
+    margin: 0 auto;
+    transform: translate(-50%, 130%);
+  }
+}
+
+@media (max-width: 600px) {
+  .Blogcard-Container {
+    margin: 0 auto;
+    transform: translate(-50%, 100%);
+  }
+}
+
+@media (max-width: 500px) {
+  .Blogcard-Container {
+    margin: 0 auto;
+    transform: translate(-50%, 90%);
+  }
+}

@@ -71,7 +71,7 @@ export default function GetInTouch() {
                     <textarea id="message" rows="4" required></textarea>
                 </div>
             </form>
-            <button type="submit">Send Message</button>
+            <button type="submit">Send Message ➔</button>
 
         </div>
         </div>

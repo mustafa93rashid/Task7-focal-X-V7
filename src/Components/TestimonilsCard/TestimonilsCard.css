@@ -1,3 +1,62 @@
-.stars{
-    display: flex;
+/* Star Ratings Container */
+.MR-stars {
+  display: flex;
+}
+
+/* Rating Stars */
+.MR-FilledStar {
+  font-size: 1.5rem;
+  color: #fca21a;
+}
+
+.MR-OutlinedStar {
+  font-size: 1.34rem;
+  color: #fca21a;
+}
+
+.MR-testimonials-card-quotation {
+  width: 15%;
+}
+
+.MR-testimonials-card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Testimonials Card Styling */
+.MR-testimonials-card {
+  width: fit-content;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.MR-testimonials-card:hover {
+  background-color: #384bff;
+  color: #fff;
+  p,
+  span {
+    color: #fff;
+  }
+}
+
+.MR-testimonials-card p,
+.MR-picture-and-title span {
+  color: rgba(0, 0, 0, 0.466);
+}
+
+.MR-testimonials-card-info div h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.MR-picture-and-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.MR-picture-and-title span {
+  font-size: 0.9rem;
 }

@@ -5,15 +5,23 @@
 .MR-service-req-card-content span {
   font-size: 40px;
   color: rgba(255, 255, 255, 0.466);
+  font-weight: 900;
 }
 
 .MR-service-req-card-content h4 {
   font-size: 20px;
+  font-weight: 700;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .MR-service-req-card-content p {
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.466);
+  color: rgba(255, 255, 255, 0.719);
+}
+
+@media (max-width: 768px) {
+  .MR-service-req-card-content {
+    width: 100%;
+  }
 }

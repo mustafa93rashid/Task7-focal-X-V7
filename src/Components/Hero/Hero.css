@@ -1,128 +1,226 @@
 /* Main Hero Section Styles */
-.hero-section {
-    height: calc(100vh - 40px);
-    width: 90%;
-    background-color: #384cff;
-    color: #fcfcfc;
-    margin: 0 auto;
-    border-radius: 30px;
-    margin-top: 40px;
-    position: relative;
-    overflow: hidden;
-    padding: 10% 10% 0% 10%;
-    display: flex;
-
+.MR-hero-section {
+  height: calc(100vh - 55px);
+  width: 90%;
+  background-color: #384cff;
+  color: #fcfcfc;
+  margin: 0 auto;
+  border-radius: 30px;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+  padding: 10% 10% 0% 10%;
 }
 
-/* Pulse Icon in Header */
-.pulse-icon {
-    width: 20px;
+.MR-pulse-icon {
+  width: 20px;
 }
 
-/* Hero Header Text */
-.hero-header p {
-    border: 1px solid white;
-    border-radius: 30px;
-    width: fit-content;
-    padding: 12px;
-    font-weight: 700;
+.MR-hero-header p {
+  border: 1px solid white;
+  border-radius: 30px;
+  width: fit-content;
+  padding: 12px;
+  font-weight: 700;
 }
 
-/* Hero Title */
-.hero-header h2 {
-    font-size: 45px;
-    font-weight: 700;
+.MR-hero-header h2 {
+  font-size: 45px;
+  font-weight: 700;
 }
 
-/* Key Features List */
-.feature-list {
-    display: flex;
-    margin-top: 30px;
-}
-.feature-list ul li {
-    list-style: none;
-    padding-bottom: 10px;
+.MR-feature-list {
+  display: flex;
+  margin-top: 30px;
 }
 
-/* Call-to-Action Button */
-.cta-button {
-    gap: 10px;
-    padding: 15px 25px;
-    border-radius: 25px;
-    border: none;
-    background-color: #f98600;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
+.MR-feature-list ul {
+  padding-left: 0;
+  padding-right: 15px;
 }
-.cta-button:hover {
-    background-color: #f8af41;
-    transform: scale(1.1);
+.MR-feature-list ul li {
+  list-style: none;
+  padding-bottom: 10px;
 }
 
-/* Reviews Section */
-.reviews-container {
-    width: 50%;
-    background-color: #fcfcfc1c;
-    padding: 35px;
-    position: absolute;
-    bottom: 0;
-    border-radius: 26px 26px 0 0;
-    border: 0.5px solid rgba(255, 255, 255, 0.555);
+.MR-cta-button {
+  gap: 10px;
+  padding: 15px 25px;
+  border-radius: 25px;
+  border: none;
+  background-color: #f98600;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
-.review-title {
-    font-size: 20px;
+.MR-cta-button:hover {
+  background-color: #f8af41;
+  transform: scale(1.1);
 }
 
-/* Star Icons */
-.review-icon {
-    color: #00b67a;
+.MR-reviews-container {
+  width: 35%;
+  background-color: #fcfcfc1c;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 26px 26px 0 0;
+  border: 0.5px solid rgba(255, 255, 255, 0.555);
 }
-.rating-stars {
-    color: #f8af41;
+.MR-review-title {
+  font-size: 1rem;
+}
+
+.MR-review-icon {
+  color: #00b67a;
+}
+.MR-rating-stars {
+  color: #f8af41;
+  .MR-rating-starsin {
+    width: 15%;
+  }
 }
 
 /* Review Content */
-.review-content {
-    display: flex;
-    align-items: center;
+.MR-review-content {
+  display: flex;
+  align-items: center;
+  p {
+    font-size: 0.6rem;
+  }
 }
-.review-image {
-    margin-right: 10px;
+.MR-review-image {
+  margin-right: 10px;
+  width: 40%;
 }
 
 /* Hero Image and Decorative Shapes */
-.main-hero-image {
-    width: 25%;
-    position: absolute;
-    bottom: 0;
-    right: 10%;
-    z-index: 9999;
+
+.MR-main-hero-image {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  z-index: 9999;
 }
-.decorative-shape1 {
-    width: 33%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 0;
+
+.MR-decorative-shape1 {
+  width: 33%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
 }
-.decorative-shape2 {
-    width: 10%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
+.MR-decorative-shape2 {
+  width: 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .decorative-shape1, .decorative-shape2 {
-        display: none;
+@media (max-width: 1122px) {
+  .MR-main-hero-image {
+    width: 40%;
+    right: 3%;
+    bottom: 0;
+  }
+}
+@media (max-width: 993px) {
+  .MR-main-hero-image {
+    position: static;
+    width: 70% !important;
+    margin-left: 10%;
+  }
+  .MR-decorative-shape1,
+  .MR-decorative-shape2 {
+    display: none;
+  }
+  .MR-hero-main-content {
+    flex-wrap: wrap-reverse;
+    margin-top: 10px;
+    gap: 20px;
+  }
+  .MR-reviews-container {
+    position: static;
+    width: 100%;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .MR-hero-section {
+    height: 100%;
+  }
+  .MR-feature-list {
+    display: block;
+  }
+  .MR-main-hero-image {
+    width: 100%;
+  }
+  .MR-review-card {
+    padding-left: 25%;
+  }
+  .MR-review-image {
+    width: 35%;
+  }
+  .MR-review-content {
+    p {
+      font-size: 1rem;
     }
-    .hero-main-content {
-        display: block;
-        flex-wrap: wrap-reverse;
-    }
+  }
+  .MR-review-title {
+    font-size: 1.5rem;
+  }
+}
+/* Hero of About and Contact Section */
+.MR-hero2-section {
+  position: relative;
+  background-image: url("/image/breadcrumb.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.MR-hero2-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 102, 0.6);
+  z-index: 1;
+}
+
+.MR-overlay {
+  position: relative;
+  z-index: 2;
+}
+
+.MR-overlay h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.MR-overlay p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.MR-overlay p a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.MR-overlay p a:hover {
+  opacity: 1;
 }

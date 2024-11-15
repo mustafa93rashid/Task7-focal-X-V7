@@ -1,24 +1,102 @@
-.pricing-section {
-    margin-top: 100px;
-    text-align: center;
-    position: relative;
+/* Main Section Styling */
+.OP-section {
+  margin-top: 100px;
+  position: relative;
 }
 
-.pricing-title {
-    color: #384bff;
-    font-size: 1.5rem;
+/* Title Styling with Icons */
+.OP-title {
+  color: #384bff;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.pricing-description {
-    font-size: 1.875rem; 
-    margin-top: 10px;
+/* Description Styling */
+.OP-description {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
 }
 
-.pricing-card-container {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    width: 100%;
+/* Styling Toggle Buttons and text */
+.OP-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.OP-toggle-buttons {
+  border: 0.8px solid #d4dcff;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+.OP-toggle-buttons button {
+  border-radius: 30px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 10px 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.OP-toggle-buttons button:hover {
+  background-color: #384bff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.OP-toggle-buttons button:nth-child(2) {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.OP-toggle-container span {
+  color: #384bff;
+}
+
+.OP-toggle-container img {
+  width: 4%;
+}
+
+/* Container for Pricing Cards */
+.OP-card-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Decorative  Shape */
+.OP-shape-left {
+  width: 7%;
+  position: absolute;
+  left: 0;
+  top: 70%;
+}
+
+.OP-shape-right {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+}
+
+/* Responsive Design */
+@media (max-width: 1305px) {
+  .OP-shape-left {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .OP-shape-right {
+    display: none;
+  }
 }

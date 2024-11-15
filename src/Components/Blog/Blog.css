@@ -1,27 +1,59 @@
 .MR-Blog {
-    margin-top: 50px;
-    padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 375px;
 }
 
-.MR-Blog h3 {
-    font-size: 1.875rem;
-    margin-top: 10px;
-    color: #333;
-    padding-left: 12%;
-
+.MR-BlogTitle P {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #384bff;
+  padding-left: 12%;
+  gap: 10px;
 }
 
-.MR-Blog-Description {
-    color: #384bff;
-    margin: 20px 0;
-    padding-left: 12%;
-
+.MR-BlogTitle h3 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+.MR-BlogDescrption-Icon {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 12%;
+  padding-right: 12%;
 }
 
 .blogcard-flex {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 40px;
-    row-gap: 110px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 110px;
+  justify-content: center;
+}
+
+.blogcard-flex-none {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .MR-BlogTitle P {
+    padding-left: 10px;
+  }
+  .MR-BlogDescrption-Icon {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    width: 50%;
+  }
+  .blogcard-flex {
+    display: none;
+  }
+  .blogcard-flex-none {
+    display: block;
+  }
+  @media (max-width: 627px) {
+    .MR-BlogDescrption-Icon {
+      width: 70%;
+    }
+  }
 }

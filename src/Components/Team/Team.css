@@ -1,50 +1,65 @@
-.team-section{
-    margin-top: 100px;
-    padding-left: 150px;
-
-
+.team-section {
+  margin-top: 100px;
+  padding-left: 150px;
 }
 
 .team-title {
-    color: #384bff;
-    font-size: 1.5rem;
+  color: #384bff;
+  font-size: 1.5rem;
 }
-.team-description{
-    font-size: 1.875rem; 
-    margin-top: 10px;
-    font-weight: bold;
+.team-description {
+  font-size: 1.875rem;
+  margin-top: 10px;
+  font-weight: bold;
 }
-.Teamcard{
-    margin-top: 35px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+.Teamcard {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-.Brandtrust
-{
-margin-top: 150px;
-text-align: center;
-font-weight: 900;
-display: flex;
-justify-content: center;
-align-items: center;
+.Brandtrust {
+  margin-top: 150px;
+  text-align: center;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.Brandline{
-    width: 30%;
-    height: 1px;
-    background-color: black;
-    margin:0px 100px;
+.Brandline {
+  width: 30%;
+  height: 1px;
+  background-color: black;
+  margin: 0px 100px;
 }
 
 .envato {
-display: flex;
-justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-.envato img{
-    width: 200px;
+.envato img {
+  width: 200px;
 }
-.envato img:nth-child(3){
-    filter: invert(36%) sepia(93%) saturate(6202%) hue-rotate(189deg) brightness(97%) contrast(104%);
+.envato img:nth-child(3) {
+  filter: invert(36%) sepia(93%) saturate(6202%) hue-rotate(189deg)
+    brightness(97%) contrast(104%);
 }
 
+@media(max-width: 992px) {
+    .envato img:nth-child(1) {
+        display: none;
+    }
+    .envato img:nth-child(2) {
+        display: none;
+    }
+    .envato img:nth-child(4) {
+        display: none;
+    }
+    .envato img:nth-child(5) {
+        display: none;
+    }
+
+
+}
